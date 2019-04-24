@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<configuration name="DocBook v5.1+" 
+  mimeType="application/x-docbook-5+xml"
+  icon="xxe-config:common/mime_types/docbook.png"
+  xmlns="http://www.xmlmind.com/xmleditor/schema/configuration"
+  xmlns:cfg="http://www.xmlmind.com/xmleditor/schema/configuration"
+  xmlns:db="http://docbook.org/ns/docbook">
+
+  <include location="xxe-config:docbook51/docbook51.xxe" />
+<!-- ET: test section for keyboard bindings -->
+<!--
+<binding>
+   <keyPressed code="K" modifiers="alt"/>
+   <command name="test.keyboard.shortcuts"/>
+</binding>
+
+<command name="test.keyboard.shortcuts">
+  	<macro trace="true">
+ 		<sequence>
+ 		  <command name="alert" parameter="Test!"/>
+ 		</sequence>
+ 	</macro>       
+</command>
+-->
+<!-- ET: END of test section for keyboard bindings -->
+
+<!-- ET: section node inserted "after" current node -->
+<binding>
+  <keyPressed code="S" modifiers="alt"/>
+  <command name="insert" parameter="after[implicitElement] {http://docbook.org/ns/docbook}section" />
+</binding>
+
+<!-- ET: section node inserted "before" current node -->
+<binding>
+  <keyPressed code="S" modifiers="alt shift"/>
+  <command name="insert" parameter="before[implicitElement] {http://docbook.org/ns/docbook}section" />
+</binding>
+
+<!-- ET: para node inserted "after" current node -->
+
+<binding>
+  <keyPressed code="P" modifiers="alt"/>
+  <command name="insert" parameter="after[implicitElement] {http://docbook.org/ns/docbook}para" />
+</binding>
+
+
+<!-- ET: para node inserted "before" current node -->
+
+<binding>
+  <keyPressed code="P" modifiers="alt shift"/>
+   <command name="insert" parameter="before[implicitElement] {http://docbook.org/ns/docbook}para" />
+</binding>
+
+<!-- ************************ ET: shortcuts for lists: orderedlist, itemizedlist, procedure ************************ -->
+
+<!-- orderedlist insert after -->
+<binding>
+  <keyPressed code="O" modifiers="alt"/>
+  <command name="insert" parameter="after[implicitElement] {http://docbook.org/ns/docbook}orderedlist" />
+</binding>
+
+<!-- orderedlist insert before -->
+<binding>
+  <keyPressed code="O" modifiers="alt shift"/>
+  <command name="insert" parameter="before[implicitElement] {http://docbook.org/ns/docbook}orderedlist" />
+</binding>
+
+
+<!-- itemizedlist insert after -->
+<binding>
+  <keyPressed code="I" modifiers="alt"/>
+  <command name="insert" parameter="after[implicitElement] {http://docbook.org/ns/docbook}itemizedlist" />
+</binding>
+
+<!-- itemizedlist insert before -->
+<binding>
+  <keyPressed code="I" modifiers="alt shift"/>
+  <command name="insert" parameter="before[implicitElement] {http://docbook.org/ns/docbook}itemizedlist" />
+</binding>
+
+<!-- procedure insert after -->
+<binding>
+  <keyPressed code="U" modifiers="alt"/>
+  <command name="insert" parameter="after[implicitElement] {http://docbook.org/ns/docbook}procedure" />
+</binding>
+
+<!-- procedure insert before -->
+<binding>
+  <keyPressed code="U" modifiers="alt shift"/>
+  <command name="insert" parameter="before[implicitElement] {http://docbook.org/ns/docbook}procedure" />
+</binding>
+
+<!-- ET: Lift items (listitems, steps, table rows, revisions) up and down within different kind of lists -->
+
+<!-- ET: lifting UP... -->
+
+<binding>
+  <keyPressed code="UP" modifiers="alt shift"/>
+  <command name="db51.lift.listitem.up"/>
+</binding>
+
+<command name="db51.lift.listitem.up">
+	<macro>
+		<sequence>
+			<command name="selectNode" parameter="ancestorOrSelf[implicitElement] {http://docbook.org/ns/docbook}listitem {http://docbook.org/ns/docbook}callout {http://docbook.org/ns/docbook}step {http://docbook.org/ns/docbook}revision {http://docbook.org/ns/docbook}row" />
+			<match context="$selected" pattern="*[position() &gt; 1]" />
+			<set variable="anchor" context="$selected" expression="./preceding-sibling::*[1]" />
+			<command name="cut" />
+			<set variable="selected" expression="$anchor" />
+			<command name="paste" parameter="before" />
+		</sequence>
+	</macro>
+</command>
+
+<!-- ET: ...and lifting DOWN -->
+
+<binding>
+  <keyPressed code="DOWN" modifiers="alt shift"/>
+  <command name="db51.lift.listitem.down"/>
+</binding>
+
+<command name="db51.lift.listitem.down">
+	<macro>
+		<sequence>
+			<command name="selectNode" parameter="ancestorOrSelf[implicitElement] {http://docbook.org/ns/docbook}listitem {http://docbook.org/ns/docbook}callout {http://docbook.org/ns/docbook}step {http://docbook.org/ns/docbook}revision {http://docbook.org/ns/docbook}row" />
+			<match context="$selected" pattern="*[position() &lt; last()]" />
+			<set variable="anchor" context="$selected" expression="./following-sibling::*[1]" />
+			<command name="cut" />
+			<set variable="selected" expression="$anchor" />
+			<command name="paste" parameter="after" />
+		</sequence>
+	</macro>
+</command>
+
+<!-- ************ inline setup related elemens: parameter, filename, remark, emphasis  ************ -->
+
+<!-- filename insert -->
+<binding>
+  <keyPressed code="F" modifiers="alt"/>
+  <command name="convert" parameter="[implicitElement] {http://docbook.org/ns/docbook}filename" />
+</binding>
+
+<!-- parameter insert -->
+<binding>
+  <keyPressed code="E" modifiers="alt"/>
+  <command name="convert" parameter="[implicitElement] {http://docbook.org/ns/docbook}parameter" />
+</binding>
+
+<!-- remark insert -->
+<binding>
+  <keyPressed code="R" modifiers="alt"/>
+   <command name="convert" parameter="[implicitElement] {http://docbook.org/ns/docbook}remark" />
+</binding>
+
+<!-- emphasis insert -->
+<binding>
+  <keyPressed code="H" modifiers="alt"/>
+   <command name="convert" parameter="[implicitElement] {http://docbook.org/ns/docbook}emphasis" />
+</binding>
+
+<!-- ************ GUI elements ******** -->
+<!--  guibutton insert -->
+<binding>
+  <keyPressed code="B" modifiers="alt"/>
+  <command name="convert" parameter="[implicitElement] {http://docbook.org/ns/docbook}guibutton" />
+</binding>
+
+<!--  guimenu insert -->
+<binding>
+  <keyPressed code="M" modifiers="alt"/>
+  <command name="convert" parameter="[implicitElement] {http://docbook.org/ns/docbook}guimenu" />
+</binding>
+
+<!--  guilabel insert -->
+<binding>
+  <keyPressed code="L" modifiers="alt"/>
+  <command name="convert" parameter="[implicitElement] {http://docbook.org/ns/docbook}guilabel" />
+</binding>
+
+<!-- ************ code samples ******** -->
+
+<!-- programlisting insert -->
+<binding>
+  <keyPressed code="G" modifiers="alt"/>
+  <!-- <command name="alert" parameter="into programlisting" /> -->
+  <command name="insert" parameter="into {http://docbook.org/ns/docbook}programlisting" />
+</binding>
+
+<!-- screen insert --> 
+<binding>
+  <keyPressed code="C" modifiers="alt"/>
+  <!-- <command name="insert" parameter="into screen" /> -->
+  <command name="add" parameter="after[implicitElement] {http://docbook.org/ns/docbook}screen" />
+</binding>
+
+<!-- ********************** Cancel inline elements formatting ************* -->
+
+<!-- Converting any inline elemens to plain text inside current block element -->
+<binding>
+  <keyPressed code="Z" modifiers="mod alt" />
+  <command name="convert" parameter="[implicitElement] #text" />
+</binding>
+
+</configuration>
