@@ -1,51 +1,40 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<a:addon location="ru_translation.zip"
+<?xml version="1.0" encoding="UTF-8"?>
+<a:addon location="xxe-docbook-fauthoring.zip"
          xmlns:a="http://www.xmlmind.com/xmleditor/schema/addon">
   <a:category>
     <a:configuration />
   </a:category>
 
-  <a:name>DocBook 5.x fast authoring addon</a:name>
+  <a:name>DocBook fast authoring addon</a:name>
 
   <a:version>0.1.0</a:version>
 
   <a:author>Eduard Tibet, <a href="mailto:eduard.tibet@gmail.com"
-  xmlns="http://www.w3.org/1999/xhtml">eduard.tibet AT gmail DOT
-  com</a></a:author>
+  xmlns="http://www.w3.org/1999/xhtml">eduard.tibet@gmail.com</a></a:author>
 
-  <a:date>2019-04-24</a:date>
+  <a:date>2019-06-04</a:date>
 
-  <a:abstract>This configuration is intended for faster authoring of DocBook
-  5.1 based documents using additional key bindings, extended CSS coloring,
-  etc</a:abstract>
+  <a:abstract>This configuration is intended for faster authoring of
+  DocBook/XML-based documents using additional key bindings, extended CSS
+  coloring, etc. Configuration works with any DocBook/XML 5.1 document. NOTE:
+  this is an alpha version of a configuration!</a:abstract>
 
   <a:documentation><p xmlns="http://www.w3.org/1999/xhtml">This configuration
-  adds several improvements on DocBook 5.1 documents authoring over existing
-  default configuration:</p><ul xmlns="http://www.w3.org/1999/xhtml">
+  adds several improvements on DocBook documents authoring over existing
+  XXE-default configuration:</p><ul xmlns="http://www.w3.org/1999/xhtml">
       <li>Added key bindings for the most demanded DocBook elements: section,
       para, etc.;</li>
 
-      <li>Added key bindings for sorting list items up and down (works for
-      itemizedlist, orderedlist, procedure);</li>
-
-      <li>;</li>
-
-      <li>;</li>
+      <li>Added key bindings for sorting different items up and down (works for
+      itemizedlist/listitem, orderedlist/listitem, procedure/step, para, section).</li>
     </ul><p xmlns="http://www.w3.org/1999/xhtml">This addon have been released
-  under BSD 3-Clause License and can be found at and forked from
-  https://github.com/eduardtibet/xxe-docbook-fauthoring</p>Author's contacts:<ul
-      xmlns="http://www.w3.org/1999/xhtml">
-      <li>email: <a href="mailto:eduard.tibet@gmail.com">eduard.tibet AT gmail
-      DOT com</a></li>
+  and distributed under BSD 3-Clause License. It be found at and forked from the following github project: <a
+  href="https://github.com/eduardtibet/xxe-docbook-fauthoring">https://github.com/eduardtibet/xxe-docbook-fauthoring</a></p>Author's
+  contacts:<ul xmlns="http://www.w3.org/1999/xhtml">
+      <li>email: <a href="mailto:eduard.tibet@gmail.com">eduard.tibet@gmail.com</a></li>
 
       <li>LinkedIn: <a
       href="https://ru.linkedin.com/in/eduardtibet">https://ru.linkedin.com/in/eduardtibet</a></li>
-
-      <li>Toster (stackoverflow-like in Russian only): <a
-      href="https://toster.ru/user/eduardtibet/tag_answers?tag=&#1076;&#1086;&#1082;&#1091;&#1084;&#1077;&#1085;&#1090;&#1072;&#1094;&#1080;&#1103;">https://toster.ru/user/eduardtibet/tag_answers?tag=&#1076;&#1086;&#1082;&#1091;&#1084;&#1077;&#1085;&#1090;&#1072;&#1094;&#1080;&#1103;</a></li>
-
-      <li>Questions about addon can be asked also at forum page <a
-      href="http://forum.singlesourcing.ru/">http://forum.singlesourcing.ru/&lt;id&gt;</a></li>
     </ul></a:documentation>
 
   <a:xxeVersion>7.3.0+</a:xxeVersion>

@@ -1,14 +1,15 @@
+<!-- Copyright (c) 2015-2019, Eduard Tibet
+  Use of this source code is governed by a BSD 3-Clause license that can be found in the LICENSE file. -->
+
 <?xml version='1.0' encoding='UTF-8'?>
-<configuration name="DocBook v5.1+" 
-  mimeType="application/x-docbook-5+xml"
-  icon="xxe-config:common/mime_types/docbook.png"
+<configuration name="DocBook fast authoring addon" 
   xmlns="http://www.xmlmind.com/xmleditor/schema/configuration"
   xmlns:cfg="http://www.xmlmind.com/xmleditor/schema/configuration"
   xmlns:db="http://docbook.org/ns/docbook">
 
   <include location="xxe-config:docbook51/docbook51.xxe" />
+
 <!-- ET: test section for keyboard bindings -->
-<!--
 <binding>
    <keyPressed code="K" modifiers="alt"/>
    <command name="test.keyboard.shortcuts"/>
@@ -17,11 +18,10 @@
 <command name="test.keyboard.shortcuts">
   	<macro trace="true">
  		<sequence>
- 		  <command name="alert" parameter="Test!"/>
+ 		  <command name="alert" parameter="'DocBook fast authoring addon' loaded successfully!"/>
  		</sequence>
  	</macro>       
 </command>
--->
 <!-- ET: END of test section for keyboard bindings -->
 
 <!-- ET: section node inserted "after" current node -->
@@ -96,13 +96,14 @@
 
 <binding>
   <keyPressed code="UP" modifiers="alt shift"/>
-  <command name="db51.lift.listitem.up"/>
+  <command name="db51.lift.items.up"/>
 </binding>
 
-<command name="db51.lift.listitem.up">
+<command name="db51.lift.items.up">
 	<macro>
 		<sequence>
-			<command name="selectNode" parameter="ancestorOrSelf[implicitElement] {http://docbook.org/ns/docbook}listitem {http://docbook.org/ns/docbook}callout {http://docbook.org/ns/docbook}step {http://docbook.org/ns/docbook}revision {http://docbook.org/ns/docbook}row" />
+			<command name="selectNode" parameter="ancestorOrSelf[implicitElement] {http://docbook.org/ns/docbook}listitem {http://docbook.org/ns/docbook}callout {http://docbook.org/ns/docbook}step {http://docbook.org/ns/docbook}revision {http://docbook.org/ns/docbook}row
+			{http://docbook.org/ns/docbook}para"/>
 			<match context="$selected" pattern="*[position() &gt; 1]" />
 			<set variable="anchor" context="$selected" expression="./preceding-sibling::*[1]" />
 			<command name="cut" />
@@ -116,13 +117,14 @@
 
 <binding>
   <keyPressed code="DOWN" modifiers="alt shift"/>
-  <command name="db51.lift.listitem.down"/>
+  <command name="db51.lift.items.down"/>
 </binding>
 
-<command name="db51.lift.listitem.down">
+<command name="db51.lift.items.down">
 	<macro>
 		<sequence>
-			<command name="selectNode" parameter="ancestorOrSelf[implicitElement] {http://docbook.org/ns/docbook}listitem {http://docbook.org/ns/docbook}callout {http://docbook.org/ns/docbook}step {http://docbook.org/ns/docbook}revision {http://docbook.org/ns/docbook}row" />
+			<command name="selectNode" parameter="ancestorOrSelf[implicitElement] {http://docbook.org/ns/docbook}listitem {http://docbook.org/ns/docbook}callout {http://docbook.org/ns/docbook}step {http://docbook.org/ns/docbook}revision {http://docbook.org/ns/docbook}row
+			{http://docbook.org/ns/docbook}para" />
 			<match context="$selected" pattern="*[position() &lt; last()]" />
 			<set variable="anchor" context="$selected" expression="./following-sibling::*[1]" />
 			<command name="cut" />
