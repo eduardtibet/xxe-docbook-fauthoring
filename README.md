@@ -4,7 +4,7 @@
 <!-- TOC started -->
 
  * [About](#about)
- * [Limitations](#limitation)
+ * [Limitations](#limitations)
  * [Installation](#installation)
  * [Usage](#usage)
  * [FAQ](#faq)
