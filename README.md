@@ -4,6 +4,7 @@
 <!-- TOC started -->
 
  * [About](#about)
+ * [Limitations](#limitation)
  * [Installation](#installation)
  * [Usage](#usage)
  * [FAQ](#faq)
@@ -25,9 +26,47 @@ Project's aim is to speed-up an authoring and editing of any DocBook-based docum
 
 **NOTE**: BTW, XMLMind XML Editor (XXE, for short) is free for use for any non-commercial and open source projects - see its [license](https://www.xmlmind.com/xmleditor/license_xxe_perso.html) for a details. You can [download](https://www.xmlmind.com/xmleditor/download.shtml) and use it for such projects for free.
 
+## Limitations
+
+Due to author's limited resources this addon works only with a DocBook 5.x version of a source files (NS-based files). It doesn't support Docbook 4.5 (non NS-awared) documents. In case of high volume feedback from a users of an addon, author will try to add a v. 4.5 support later. 
+
 ## Installation
 
-TBD
+### Prerequisites
+
+- XXE version 7.3.0 or higher installed and working. For XXE system requirements look at [this page](https://www.xmlmind.com/xmleditor/_distrib/doc/help/installing_xxe.html) 
+
+### Installation ways
+
+xxe docbook fauthoring addon can be installed in three different ways:
+
+1. Built-in direct installation method, using XXE itself (RECOMMENDED!).
+
+2. Manual installation (using prepared `.zip` file - either from XXE's [contribution page](http://www.xmlmind.com/xmleditor/_usercontrib/index.shtml), or from the author's [addon page](http://www.singlesourcing.ru/pub/xxe-addons/xxe-docbook-fauthoring/), or from the [release page](https://github.com/eduardtibet/xxe-docbook-fauthoring/releases) (TBD!)
+
+3. Installation using projects's Github page.
+
+### Built-in direct installation
+
+To install an addon using XXE itself:
+
+1. Open XXE.
+
+2. Choose menuitem **Options|Install Add-ons**. XXE will scan a locations for addons and gives you a list of available addons for the current version of XXE.
+
+3. Search for and click on a checkbox with a **DocBook fast authoring addon** addon name.
+
+4. Press **OK** button.
+
+5. Restart XXE to apply changes.
+
+**NOTE:** For detailed explanation, how to work with an **Install Add-ons** dialog box look at [this page](https://www.xmlmind.com/xmleditor/_distrib/doc/help/wh/com.xmlmind.xmleditapp.app.part.InstallAddonsDialog.html)
+
+### Manual installation
+
+XXE itself has a [perfect help page, describing how to do this](https://www.xmlmind.com/xmleditor/addons.shtml#manual_install).
+
+### Installation using projects's Github page
 
 ## Usage
 

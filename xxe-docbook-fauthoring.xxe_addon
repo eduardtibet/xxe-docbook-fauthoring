@@ -35,7 +35,9 @@
 
       <li>LinkedIn: <a
       href="https://ru.linkedin.com/in/eduardtibet">https://ru.linkedin.com/in/eduardtibet</a></li>
-    </ul></a:documentation>
+    </ul>
+    Full documentation with a tutorial is in progress now. Up to the moment it will be released, you can use the shorter version at https://github.com/eduardtibet/xxe-docbook-fauthoring/blob/master/README.md
+    </a:documentation>
 
   <a:xxeVersion>7.3.0+</a:xxeVersion>
 </a:addon>

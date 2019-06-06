@@ -1,13 +1,20 @@
-<!-- Copyright (c) 2015-2019, Eduard Tibet
-  Use of this source code is governed by a BSD 3-Clause license that can be found in the LICENSE file. -->
-
 <?xml version='1.0' encoding='UTF-8'?>
 <configuration name="DocBook fast authoring addon" 
   xmlns="http://www.xmlmind.com/xmleditor/schema/configuration"
   xmlns:cfg="http://www.xmlmind.com/xmleditor/schema/configuration"
   xmlns:db="http://docbook.org/ns/docbook">
 
-  <include location="xxe-config:docbook51/docbook51.xxe" />
+<!-- Copyright (c) 2015-2019, Eduard Tibet
+  ` This code is licenced under BSD 3-Clause license that can be found in the
+  ` LICENSE file.
+-->
+
+<!-- All alternations with a comments marked by the "ET" mark have been made
+  ` by Eduard Tibet
+-->
+  
+<!--<include location="xxe-config:docbook5/docbook5.xxe" />-->
+<include location="xxe-config:docbook51/docbook51.xxe" />
 
 <!-- ET: test section for keyboard bindings -->
 <binding>
@@ -90,7 +97,7 @@
   <command name="insert" parameter="before[implicitElement] {http://docbook.org/ns/docbook}procedure" />
 </binding>
 
-<!-- ET: Lift items (listitems, steps, table rows, revisions) up and down within different kind of lists -->
+<!-- ET: Lift items (listitems, steps, table rows, revisions) up and down within different kind of lists/groups -->
 
 <!-- ET: lifting UP... -->
 
