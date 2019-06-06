@@ -68,6 +68,21 @@ XXE itself has a [perfect help page, describing how to do this](https://www.xmlm
 
 ### Installation using projects's Github page
 
+To install using project's Github page:
+
+1. Close XXE, in case it is running.
+
+2. Locate a user preference directory - [how to locate?] (https://www.xmlmind.com/xmleditor/addons.shtml#manual_install)
+
+3. Change a directory to an `addon` folder.
+
+4. Get a project files by directly cloning it to an `addon` folder:
+
+```
+$ git clone https://github.com/eduardtibet/xxe-docbook-fauthoring.git
+```
+5. Start XXE.
+
 ## Usage
 
 TBD
