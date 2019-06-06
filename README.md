@@ -72,7 +72,7 @@ To install using project's Github page:
 
 1. Close XXE, in case it is running.
 
-2. Locate a user preference directory - [how to locate?] (https://www.xmlmind.com/xmleditor/addons.shtml#manual_install)
+2. Locate a user preference directory - [how to locate?](https://www.xmlmind.com/xmleditor/addons.shtml#manual_install)
 
 3. Change a directory to an `addon` folder.
 
