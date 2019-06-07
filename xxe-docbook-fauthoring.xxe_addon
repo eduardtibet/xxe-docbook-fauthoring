@@ -1,43 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <a:addon location="xxe-docbook-fauthoring.zip"
          xmlns:a="http://www.xmlmind.com/xmleditor/schema/addon">
   <a:category>
     <a:configuration />
   </a:category>
 
-  <a:name>DocBook fast authoring addon</a:name>
+  <a:name>DocBook fauthoring addon</a:name>
 
   <a:version>0.1.0</a:version>
+
+  <a:requires>DocBook v5.1+ configuration</a:requires>
 
   <a:author>Eduard Tibet, <a href="mailto:eduard.tibet@gmail.com"
   xmlns="http://www.w3.org/1999/xhtml">eduard.tibet@gmail.com</a></a:author>
 
-  <a:date>2019-06-04</a:date>
+  <a:date>2019-06-07</a:date>
 
   <a:abstract>This configuration is intended for faster authoring of
   DocBook/XML-based documents using additional key bindings, extended CSS
-  coloring, etc. Configuration works with any DocBook/XML 5.1 document. NOTE:
-  this is an alpha version of a configuration!</a:abstract>
+  coloring, etc.</a:abstract>
 
-  <a:documentation><p xmlns="http://www.w3.org/1999/xhtml">This configuration
-  adds several improvements on DocBook documents authoring over existing
-  XXE-default configuration:</p><ul xmlns="http://www.w3.org/1999/xhtml">
+  <a:documentation><p xmlns="http://www.w3.org/1999/xhtml"><b>NOTE 1</b>: This
+  is an alpha version of a configuration!</p><p
+  xmlns="http://www.w3.org/1999/xhtml"><b>NOTE 2</b>: Configuration works only
+  with DocBook/XML 5.0/5.1 documents!</p><p
+  xmlns="http://www.w3.org/1999/xhtml">This configuration adds several
+  improvements on DocBook documents authoring over existing XXE-default
+  configuration:</p><ul xmlns="http://www.w3.org/1999/xhtml">
       <li>Added key bindings for the most demanded DocBook elements: section,
       para, etc.;</li>
 
-      <li>Added key bindings for sorting different items up and down (works for
-      itemizedlist/listitem, orderedlist/listitem, procedure/step, para, section).</li>
+      <li>Added key bindings for sorting different items up and down (works
+      for itemizedlist/listitem, orderedlist/listitem, procedure/step, para,
+      section).</li>
     </ul><p xmlns="http://www.w3.org/1999/xhtml">This addon have been released
-  and distributed under BSD 3-Clause License. It be found at and forked from the following github project: <a
-  href="https://github.com/eduardtibet/xxe-docbook-fauthoring">https://github.com/eduardtibet/xxe-docbook-fauthoring</a></p>Author's
-  contacts:<ul xmlns="http://www.w3.org/1999/xhtml">
-      <li>email: <a href="mailto:eduard.tibet@gmail.com">eduard.tibet@gmail.com</a></li>
+  and distributed under BSD 3-Clause License. It be found at and forked from
+  the following github project: <a
+  href="https://github.com/eduardtibet/xxe-docbook-fauthoring">https://github.com/eduardtibet/xxe-docbook-fauthoring</a>
+  </p><p xmlns="http://www.w3.org/1999/xhtml">Full documentation with a
+  tutorial is in progress now. Up to the moment it will be released, you can
+  use the shorter version at <a
+  href="https://github.com/eduardtibet/xxe-docbook-fauthoring/blob/master/README.md">https://github.com/eduardtibet/xxe-docbook-fauthoring/blob/master/README.md</a></p><p
+  xmlns="http://www.w3.org/1999/xhtml">Author's contacts:</p><ul
+      xmlns="http://www.w3.org/1999/xhtml">
+      <li>email: <a
+      href="mailto:eduard.tibet@gmail.com">eduard.tibet@gmail.com</a></li>
 
       <li>LinkedIn: <a
       href="https://ru.linkedin.com/in/eduardtibet">https://ru.linkedin.com/in/eduardtibet</a></li>
-    </ul>
-    Full documentation with a tutorial is in progress now. Up to the moment it will be released, you can use the shorter version at https://github.com/eduardtibet/xxe-docbook-fauthoring/blob/master/README.md
-    </a:documentation>
+    </ul></a:documentation>
 
-  <a:xxeVersion>7.3.0+</a:xxeVersion>
+  <a:xxeVersion>8.0.0+</a:xxeVersion>
 </a:addon>

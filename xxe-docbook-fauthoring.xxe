@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<configuration name="DocBook fast authoring addon" 
+<configuration name="DocBook fauthoring addon" 
   xmlns="http://www.xmlmind.com/xmleditor/schema/configuration"
   xmlns:cfg="http://www.xmlmind.com/xmleditor/schema/configuration"
   xmlns:db="http://docbook.org/ns/docbook">
@@ -12,9 +12,19 @@
 <!-- All alternations with a comments marked by the "ET" mark have been made
   ` by Eduard Tibet
 -->
-  
-<!--<include location="xxe-config:docbook5/docbook5.xxe" />-->
 <include location="xxe-config:docbook51/docbook51.xxe" />
+
+<detect>
+	<and>
+	<rootElementNamespace>http://docbook.org/ns/docbook</rootElementNamespace>
+	<not><rootElementLocalName>assembly</rootElementLocalName></not>
+	<or>
+        <rootElementAttribute localName="version" namespace="" value="5.0" />
+        <rootElementAttribute localName="version" namespace="" value="5.1" />
+        <not><rootElementAttribute localName="version" namespace="" /></not>
+    </or>
+	</and>
+</detect>
 
 <!-- ET: test section for keyboard bindings -->
 <binding>
@@ -192,7 +202,7 @@
 <binding>
   <keyPressed code="G" modifiers="alt"/>
   <!-- <command name="alert" parameter="into programlisting" /> -->
-  <command name="insert" parameter="into {http://docbook.org/ns/docbook}programlisting" />
+  <command name="insert" parameter="after[implicitElement] {http://docbook.org/ns/docbook}programlisting" />
 </binding>
 
 <!-- screen insert --> 
