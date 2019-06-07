@@ -5,7 +5,7 @@
   xmlns:db="http://docbook.org/ns/docbook">
 
 <!-- Copyright (c) 2015-2019, Eduard Tibet
-  ` This code is licenced under BSD 3-Clause license that can be found in the
+  ` This code is licensed under BSD 3-Clause license that can be found in the
   ` LICENSE file.
 -->
 
@@ -13,18 +13,6 @@
   ` by Eduard Tibet
 -->
 <include location="xxe-config:docbook51/docbook51.xxe" />
-
-<detect>
-	<and>
-	<rootElementNamespace>http://docbook.org/ns/docbook</rootElementNamespace>
-	<not><rootElementLocalName>assembly</rootElementLocalName></not>
-	<or>
-        <rootElementAttribute localName="version" namespace="" value="5.0" />
-        <rootElementAttribute localName="version" namespace="" value="5.1" />
-        <not><rootElementAttribute localName="version" namespace="" /></not>
-    </or>
-	</and>
-</detect>
 
 <!-- ET: test section for keyboard bindings -->
 <binding>

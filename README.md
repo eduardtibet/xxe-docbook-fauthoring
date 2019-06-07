@@ -28,7 +28,7 @@ Project's aim is to speed-up an authoring and editing of any DocBook-based docum
 
 ## Limitations
 
-Due to author's limited resources this addon works only with a DocBook 5.x version of a source files (NS-based files). It doesn't support Docbook 4.5 (non NS-awared) documents. In case of high volume feedback from a 4.x users of an addon, author will try to add a v. 4.5 support later. 
+Due to author's limited resources this addon works only with a DocBook 5.1 version of a source files (NS-based files). Support of documents v. 5.0 requires some additional alternations (hope to be done later, although not guaranteed). It doesn't support Docbook 4.5 (non NS-awared) documents. In case of high volume feedback from a 4.x users of an addon, author will try to add a v. 4.5 support later. 
 
 ## Installation
 

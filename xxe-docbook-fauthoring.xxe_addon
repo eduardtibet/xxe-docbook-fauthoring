@@ -23,7 +23,7 @@
   <a:documentation><p xmlns="http://www.w3.org/1999/xhtml"><b>NOTE 1</b>: This
   is an alpha version of a configuration!</p><p
   xmlns="http://www.w3.org/1999/xhtml"><b>NOTE 2</b>: Configuration works only
-  with DocBook/XML 5.0/5.1 documents!</p><p
+  with DocBook/XML 5.1 documents! If you need it for 5.0 documents - contact an author or fill an issue on Github - see below.</p><p
   xmlns="http://www.w3.org/1999/xhtml">This configuration adds several
   improvements on DocBook documents authoring over existing XXE-default
   configuration:</p><ul xmlns="http://www.w3.org/1999/xhtml">
@@ -50,5 +50,5 @@
       href="https://ru.linkedin.com/in/eduardtibet">https://ru.linkedin.com/in/eduardtibet</a></li>
     </ul></a:documentation>
 
-  <a:xxeVersion>8.0.0+</a:xxeVersion>
+  <a:xxeVersion>9.0.0+</a:xxeVersion>
 </a:addon>
