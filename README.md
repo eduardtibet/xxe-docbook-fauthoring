@@ -28,7 +28,7 @@ Project's aim is to speed-up an authoring and editing of any DocBook-based docum
 
 ## Limitations
 
-Due to author's limited resources this addon works only with a DocBook 5.x version of a source files (NS-based files). It doesn't support Docbook 4.5 (non NS-awared) documents. In case of high volume feedback from a users of an addon, author will try to add a v. 4.5 support later. 
+Due to author's limited resources this addon works only with a DocBook 5.x version of a source files (NS-based files). It doesn't support Docbook 4.5 (non NS-awared) documents. In case of high volume feedback from a 4.x users of an addon, author will try to add a v. 4.5 support later. 
 
 ## Installation
 
@@ -85,7 +85,63 @@ $ git clone https://github.com/eduardtibet/xxe-docbook-fauthoring.git
 
 ## Usage
 
-TBD
+Addon assumes intense using of your keyboard. Addon applies to two kind of elements: block and inline.
+
+### Working with a block elements
+
+If you need to insert a block element (`para`, `section`, `orderedlist/listitems`, `procedure`, ):
+
+1. Select a block element using **Ctrl + UP** or **Ctrl + DOWN** as usual in XXE.
+
+2. Press an appropriate keyboard shortcut.
+
+Here are a short list of keyboard shortcuts of block elements:
+
+- `section` - insert after: **Alt + S**, insert before: **Shift + Alt + S**
+- `para` - insert after: **Alt + P**, insert before: **Shift + Alt + P**
+- `orderedlist` - insert after: **Alt + O**, insert before: **Shift + Alt + O**
+- `itemizedlist` - insert after: **Alt + I**, insert before: **Shift + Alt + I**
+- `procedure` - insert after: **Alt + U**, insert before: **Shift + Alt + U**
+- `screen` - insert after: **Alt + C**
+- `programlisting` - insert after: **Alt + G**
+
+**NOTE**: as you have already noted, add a **Shift** key to your shortcut to insert a block element before the existing one.
+
+If you need to lift a current block element within the list of the same ones:
+
+1. Select a block element using **Ctrl + UP** or **Ctrl + DOWN** as usual in XXE.
+
+2. Press a **Shift + Alt + DOWN** to move it down or **Shift + Alt + UP** to move it up.
+
+**Example**: inserting a section after some other one.
+
+1. Select a section element with **Ctrl + UP**. Selected element will be bordered by a red line.
+
+![Existing section, selected in XXE](/doc/img/xxe_selecting_section.png)
+
+2. Press a **Alt + S** shortcut to insert a section after the selected one.
+
+![New section, inserted in XXE](/doc/img/xxe_inserted_section.png)
+
+**NOTE**: to insert section before selected use **Shift + Alt + S**.
+
+### Working with an inline elements
+
+If you want to insert an inline element:
+
+1. Select a text you want to convert to inline element.
+
+2. Press an appropriate keyboard shortcut.
+
+Here are a short list of keyboard shortcuts for inline elements:
+
+- `filename` - convert to: **Alt + F**
+- `parameter` - convert to: **Alt + E**
+- `remark` - convert to: **Alt + R**
+- `emphasis` - convert to: **Alt + E**
+- `guibutton` - convert to: **Alt + B**
+- `guimenu` - convert to: **Alt + M**
+- `guilabel` - convert to: **Alt + L**
 
 ## FAQ
 
