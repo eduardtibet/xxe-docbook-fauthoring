@@ -12,7 +12,7 @@
 <!-- All alternations with a comments marked by the "ET" mark have been made
   ` by Eduard Tibet
 -->
-<include location="xxe-config:docbook51/docbook51.xxe" />
+<include location="docbook51-config:docbook51.xxe" />
 
 <!-- ET: test section for keyboard bindings -->
 <binding>
