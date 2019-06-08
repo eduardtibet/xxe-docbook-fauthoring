@@ -28,13 +28,15 @@ Project's aim is to speed-up an authoring and editing of any DocBook-based docum
 
 ## Limitations
 
-Due to author's limited resources this addon works only with a DocBook 5.1 version of a source files (NS-based files). Support of documents v. 5.0 requires some additional alternations (hope to be done later, although not guaranteed). It doesn't support Docbook 4.5 (non NS-awared) documents. In case of high volume feedback from a 4.x users of an addon, author will try to add a v. 4.5 support later. 
+Due to author's limited resources this addon works only with a DocBook 5.1 version of a source files (NS-based files). Support of documents v.5.0 requires some additional alternations (hope to be done later, although not guaranteed). It doesn't support Docbook 4.5 (non NS-awared) documents. In case of high volume feedback from a 4.x users of an addon, author will try to add a v. 4.5 support later. 
 
 ## Installation
 
 ### Prerequisites
 
-- XXE version 7.3.0 or higher installed and working. For XXE system requirements look at [this page](https://www.xmlmind.com/xmleditor/_distrib/doc/help/installing_xxe.html) 
+- XXE version 9.0.0 or higher installed and working. For XXE system requirements look at [this page](https://www.xmlmind.com/xmleditor/_distrib/doc/help/installing_xxe.html).
+
+**NOTE**: Although, addon requires a XXE version 9.0.0, it works (and tested) on all version of XXE beginning from version 7.3.0. If you need it for a older version of XXE, just create an [issue](https://github.com/eduardtibet/xxe-docbook-fauthoring/issues).
 
 ### Installation ways
 
