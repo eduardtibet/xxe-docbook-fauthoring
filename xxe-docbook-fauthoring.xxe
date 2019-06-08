@@ -58,38 +58,38 @@
 
 <!-- ************************ ET: shortcuts for lists: orderedlist, itemizedlist, procedure ************************ -->
 
-<!-- orderedlist insert after -->
+<!-- ET: orderedlist insert after -->
 <binding>
   <keyPressed code="O" modifiers="alt"/>
   <command name="insert" parameter="after[implicitElement] {http://docbook.org/ns/docbook}orderedlist" />
 </binding>
 
-<!-- orderedlist insert before -->
+<!-- ET: orderedlist insert before -->
 <binding>
   <keyPressed code="O" modifiers="alt shift"/>
   <command name="insert" parameter="before[implicitElement] {http://docbook.org/ns/docbook}orderedlist" />
 </binding>
 
 
-<!-- itemizedlist insert after -->
+<!-- ET: itemizedlist insert after -->
 <binding>
   <keyPressed code="I" modifiers="alt"/>
   <command name="insert" parameter="after[implicitElement] {http://docbook.org/ns/docbook}itemizedlist" />
 </binding>
 
-<!-- itemizedlist insert before -->
+<!-- ET: itemizedlist insert before -->
 <binding>
   <keyPressed code="I" modifiers="alt shift"/>
   <command name="insert" parameter="before[implicitElement] {http://docbook.org/ns/docbook}itemizedlist" />
 </binding>
 
-<!-- procedure insert after -->
+<!-- ET: procedure insert after -->
 <binding>
   <keyPressed code="U" modifiers="alt"/>
   <command name="insert" parameter="after[implicitElement] {http://docbook.org/ns/docbook}procedure" />
 </binding>
 
-<!-- procedure insert before -->
+<!-- ET: procedure insert before -->
 <binding>
   <keyPressed code="U" modifiers="alt shift"/>
   <command name="insert" parameter="before[implicitElement] {http://docbook.org/ns/docbook}procedure" />
@@ -139,46 +139,46 @@
 	</macro>
 </command>
 
-<!-- ************ inline setup related elemens: parameter, filename, remark, emphasis  ************ -->
+<!-- ************ ET: inline setup related elemens: parameter, filename, remark, emphasis  ************ -->
 
-<!-- filename insert -->
+<!-- ET: filename insert -->
 <binding>
   <keyPressed code="F" modifiers="alt"/>
   <command name="convert" parameter="[implicitElement] {http://docbook.org/ns/docbook}filename" />
 </binding>
 
-<!-- parameter insert -->
+<!-- ET: parameter insert -->
 <binding>
   <keyPressed code="E" modifiers="alt"/>
   <command name="convert" parameter="[implicitElement] {http://docbook.org/ns/docbook}parameter" />
 </binding>
 
-<!-- remark insert -->
+<!-- ET: remark insert -->
 <binding>
   <keyPressed code="R" modifiers="alt"/>
    <command name="convert" parameter="[implicitElement] {http://docbook.org/ns/docbook}remark" />
 </binding>
 
-<!-- emphasis insert -->
+<!-- ET: emphasis insert -->
 <binding>
   <keyPressed code="H" modifiers="alt"/>
    <command name="convert" parameter="[implicitElement] {http://docbook.org/ns/docbook}emphasis" />
 </binding>
 
 <!-- ************ GUI elements ******** -->
-<!--  guibutton insert -->
+<!--  ET: guibutton insert -->
 <binding>
   <keyPressed code="B" modifiers="alt"/>
   <command name="convert" parameter="[implicitElement] {http://docbook.org/ns/docbook}guibutton" />
 </binding>
 
-<!--  guimenu insert -->
+<!--  ET: guimenu insert -->
 <binding>
   <keyPressed code="M" modifiers="alt"/>
   <command name="convert" parameter="[implicitElement] {http://docbook.org/ns/docbook}guimenu" />
 </binding>
 
-<!--  guilabel insert -->
+<!--  ET: guilabel insert -->
 <binding>
   <keyPressed code="L" modifiers="alt"/>
   <command name="convert" parameter="[implicitElement] {http://docbook.org/ns/docbook}guilabel" />
@@ -186,14 +186,14 @@
 
 <!-- ************ code samples ******** -->
 
-<!-- programlisting insert -->
+<!-- ET: programlisting insert -->
 <binding>
   <keyPressed code="G" modifiers="alt"/>
   <!-- <command name="alert" parameter="into programlisting" /> -->
   <command name="insert" parameter="after[implicitElement] {http://docbook.org/ns/docbook}programlisting" />
 </binding>
 
-<!-- screen insert --> 
+<!-- ET: screen insert --> 
 <binding>
   <keyPressed code="C" modifiers="alt"/>
   <!-- <command name="insert" parameter="into screen" /> -->
@@ -202,7 +202,7 @@
 
 <!-- ********************** Cancel inline elements formatting ************* -->
 
-<!-- Converting any inline elemens to plain text inside current block element -->
+<!-- ET: Converting any inline elemens to plain text inside current block element -->
 <binding>
   <keyPressed code="Z" modifiers="mod alt" />
   <command name="convert" parameter="[implicitElement] #text" />
